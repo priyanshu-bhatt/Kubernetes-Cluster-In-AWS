@@ -55,4 +55,7 @@ kubeadm init --pod-network-cidr=10.240.0.0/16  --ignore-preflight-errors=NumCPU 
 
 ## After this you'll add the .kube folder
 
+## Add CNI Flannel
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
 ## Run the join command in the slave.
